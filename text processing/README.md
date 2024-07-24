@@ -1,16 +1,61 @@
-# Part 1: Text Classifications
-This part is to build a text classification predicting the class ComputationalLinguistics. Various setting  of the model are tested in the training process:  
-1. Data input: Abstract vs Title
-2. Algorithm: Statistic model vs RNN
-3. Training size: Full training dataset vs first 1000
-cases
+# README: Text Classification and Topic Modelling
 
-A total of 6 (2x2x2) models are generated and the results are measured by using 4 metrics: F1, precision, recall and accuracy, and they were visualized in Part D. 
+## Part 1: Text Classifications
 
-# Part 2: Topic Modelling
-This part is to build models detecting topics of documents. There would be 2 variations of the base model to compare the performance of model:
-1. Unigram only vs Unigram and Bigram
-2. Different number of topics (10 vs 40)
-3. Training size: first 1000 vs first 20000 articles.
+This part focuses on building a text classification model to predict the class "ComputationalLinguistics". Various settings of the model are tested in the training process:
 
-A total of 4 models generated: 10 topics with bigram, 40 topics without bigram using 1000 articles or 20000 articles as input.
+### Settings and Variations
+
+1. **Data Input**: 
+   - Abstract 
+   - Title
+
+2. **Algorithm**: 
+   - Statistical Model 
+   - RNN (Recurrent Neural Network)
+
+3. **Training Size**: 
+   - Full Training Dataset 
+   - First 1000 Cases
+
+### Models and Evaluation
+
+A total of 6 (2x2x2) models are generated. The results are measured using the following metrics:
+- F1 Score
+- Precision
+- Recall
+- Accuracy
+
+The performance metrics of these models are visualized in Part D.
+
+## Part 2: Topic Modelling
+
+This part focuses on building models to detect topics within documents. There are variations of the base model to compare performance:
+
+### Settings and Variations
+
+1. **N-Grams**: 
+   - Unigram Only 
+   - Unigram and Bigram
+
+2. **Number of Topics**: 
+   - 10 Topics 
+   - 40 Topics
+
+3. **Training Size**: 
+   - First 1000 Articles 
+   - First 20000 Articles
+
+### Models and Evaluation
+
+A total of 4 models are generated:
+1. 10 Topics with Unigram and Bigram
+2. 40 Topics without Bigram using 1000 Articles
+3. 10 Topics with Unigram and Bigram using 20000 Articles
+4. 40 Topics without Bigram using 20000 Articles
+
+The performance of these models is compared to evaluate their effectiveness in topic detection.
+
+## Summary
+
+This README provides an overview of the methodologies and variations tested in both text classification and topic modelling tasks. The detailed performance metrics and visualizations are documented in the corresponding parts of the report.
